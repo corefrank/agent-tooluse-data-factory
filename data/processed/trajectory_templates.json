@@ -1,0 +1,67 @@
+[
+  {
+    "template_id": "single_tool_success",
+    "description": "One user turn, one tool call, one final answer.",
+    "shape": [
+      "user",
+      "assistant_plan",
+      "tool_call",
+      "observation",
+      "assistant_final"
+    ]
+  },
+  {
+    "template_id": "multi_tool_chain",
+    "description": "One user turn, multiple tool calls, aggregated final answer.",
+    "shape": [
+      "user",
+      "assistant_plan",
+      "tool_call",
+      "observation",
+      "tool_call",
+      "observation",
+      "assistant_final"
+    ]
+  },
+  {
+    "template_id": "argument_fix_recovery",
+    "description": "Initial tool error, argument repair, successful retry, final answer.",
+    "shape": [
+      "user",
+      "assistant_plan",
+      "tool_call",
+      "observation_error",
+      "assistant_plan",
+      "tool_call",
+      "observation",
+      "assistant_final"
+    ]
+  },
+  {
+    "template_id": "multi_turn_memory",
+    "description": "Multiple user turns with memory write then memory read before completion.",
+    "shape": [
+      "user",
+      "assistant_plan",
+      "tool_call",
+      "observation",
+      "assistant_final",
+      "user",
+      "assistant_plan",
+      "tool_call",
+      "observation",
+      "tool_call",
+      "observation",
+      "assistant_final"
+    ]
+  },
+  {
+    "template_id": "safety_refusal",
+    "description": "Unsafe request is blocked without executing tools.",
+    "shape": [
+      "user",
+      "assistant_plan",
+      "assistant_final"
+    ]
+  }
+]

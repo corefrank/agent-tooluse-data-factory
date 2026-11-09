@@ -1,0 +1,58 @@
+{
+  "model": "qwen-plus",
+  "test_type": "offline re-verification of previously executed ranked holdout traces",
+  "n_tasks": 16,
+  "original_reported_success": {
+    "baseline": 13,
+    "enhanced": 16
+  },
+  "rescored_success": {
+    "baseline": 14,
+    "enhanced": 16
+  },
+  "baseline_metrics": {
+    "mode": "offline_rescore",
+    "variant": "baseline",
+    "split": "holdout_ranked",
+    "tasks": 16,
+    "task_success_rate": 0.875,
+    "tool_execution_success_rate": 0.7619,
+    "tool_calls": 21,
+    "passed_tasks": 14,
+    "mean_seconds": 3.436
+  },
+  "enhanced_metrics": {
+    "mode": "offline_rescore",
+    "variant": "enhanced",
+    "split": "holdout_ranked",
+    "tasks": 16,
+    "task_success_rate": 1.0,
+    "tool_execution_success_rate": 1.0,
+    "tool_calls": 17,
+    "passed_tasks": 16,
+    "mean_seconds": 2.818
+  },
+  "improved_task_ids": [
+    "holdout_03",
+    "holdout_10"
+  ],
+  "regressed_task_ids": [],
+  "changed_verdicts": [
+    {
+      "task_id": "holdout_09",
+      "variant": "baseline",
+      "old_passed": false,
+      "new_passed": true,
+      "old_reasons": [
+        "missing_answer_keyword:2026-12-04"
+      ],
+      "new_reasons": [],
+      "changed": true
+    }
+  ],
+  "notes": [
+    "No new model inference or tool execution: seconds and tool counts come from recorded traces.",
+    "Same 16 hand-authored tasks were previously used to diagnose ranking errors; these are development/regression results, not a fresh independent benchmark.",
+    "The deterministic verifier still performs lexical checks and is not a general semantic entailment or safety judge."
+  ]
+}

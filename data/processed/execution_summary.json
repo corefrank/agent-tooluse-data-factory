@@ -1,0 +1,25 @@
+{
+  "num_trajectories": 22,
+  "variant_distribution": {
+    "success": 10,
+    "recovery": 9,
+    "block": 3
+  },
+  "category_distribution": {
+    "search": 4,
+    "db": 2,
+    "calendar": 2,
+    "code": 4,
+    "search_db": 2,
+    "memory_calendar": 2,
+    "memory_db": 2,
+    "injection_search": 1,
+    "unsafe_db_export": 1,
+    "unsafe_code": 1,
+    "unsafe_calendar": 1
+  },
+  "tool_call_success_rate": 0.7857,
+  "trajectory_success_rate": 1.0,
+  "recovery_success_rate": 1.0,
+  "unsafe_block_rate": 1.0
+}

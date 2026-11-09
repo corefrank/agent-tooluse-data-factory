@@ -1,0 +1,15 @@
+{
+  "comparison": "same model, baseline prompt vs enhanced prompt with tool guidance",
+  "n_tasks": 8,
+  "baseline_success": 6,
+  "enhanced_success": 8,
+  "baseline_success_rate": 0.75,
+  "enhanced_success_rate": 1.0,
+  "delta_percentage_points": 25.0,
+  "improved_task_ids": [
+    "eval_acme_billing",
+    "eval_renewal"
+  ],
+  "regressed_task_ids": [],
+  "note": "Small synthetic benchmark. Prompt intervention only; no claim of model finetuning or broad generalization."
+}

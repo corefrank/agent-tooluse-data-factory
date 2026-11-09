@@ -1,0 +1,13 @@
+{
+  "mode": "live",
+  "variant": "baseline",
+  "split": "eval",
+  "tasks": 8,
+  "task_success_rate": 0.75,
+  "tool_execution_success_rate": 0.5,
+  "tool_calls": 14,
+  "passed_tasks": 6,
+  "mean_seconds": 3.819,
+  "model": "qwen-plus",
+  "trace_file": "/home/nan/projects/data_engineering_book/code/zh/project_7_agent_tooluse/data/agent_mvp/eval_baseline.jsonl"
+}

@@ -1,0 +1,32 @@
+{
+  "num_records": 94,
+  "num_train_records": 78,
+  "num_val_records": 16,
+  "num_smoke_records": 12,
+  "category_distribution": {
+    "calendar": 9,
+    "code": 14,
+    "db": 7,
+    "memory_db": 15,
+    "memory_calendar": 17,
+    "search_db": 9,
+    "injection_search": 3,
+    "search": 14,
+    "unsafe_calendar": 2,
+    "unsafe_code": 2,
+    "unsafe_db_export": 2
+  },
+  "variant_distribution": {
+    "recovery": 47,
+    "success": 41,
+    "block": 6
+  },
+  "target_event_distribution": {
+    "assistant_plan": 35,
+    "tool_call": 33,
+    "assistant_final": 26
+  },
+  "safety_record_count": 9,
+  "memory_record_count": 32,
+  "estimated_tokens_total": 5838
+}

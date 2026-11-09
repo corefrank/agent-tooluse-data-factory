@@ -1,0 +1,13 @@
+{
+  "mode": "live",
+  "variant": "enhanced",
+  "split": "eval",
+  "tasks": 8,
+  "task_success_rate": 1.0,
+  "tool_execution_success_rate": 0.8333,
+  "tool_calls": 12,
+  "passed_tasks": 8,
+  "mean_seconds": 3.842,
+  "model": "qwen-plus",
+  "trace_file": "/home/nan/projects/data_engineering_book/code/zh/project_7_agent_tooluse/data/agent_mvp/eval_enhanced.jsonl"
+}

@@ -1,0 +1,41 @@
+{
+  "test_type": "unseen task prompts and new synthetic fixtures on the same toy tool environment",
+  "model": "qwen-plus",
+  "n_tasks": 16,
+  "baseline_success": 10,
+  "enhanced_success": 11,
+  "baseline_metrics": {
+    "mode": "live",
+    "variant": "baseline",
+    "split": "holdout",
+    "tasks": 16,
+    "task_success_rate": 0.625,
+    "tool_execution_success_rate": 0.7391,
+    "tool_calls": 23,
+    "passed_tasks": 10,
+    "mean_seconds": 3.661
+  },
+  "enhanced_metrics": {
+    "mode": "live",
+    "variant": "enhanced",
+    "split": "holdout",
+    "tasks": 16,
+    "task_success_rate": 0.6875,
+    "tool_execution_success_rate": 0.8889,
+    "tool_calls": 27,
+    "passed_tasks": 11,
+    "mean_seconds": 3.795
+  },
+  "improved_task_ids": [
+    "holdout_02",
+    "holdout_07",
+    "holdout_09",
+    "holdout_10"
+  ],
+  "regressed_task_ids": [
+    "holdout_01",
+    "holdout_03",
+    "holdout_05"
+  ],
+  "limitations": "Small, hand-authored synthetic benchmark; lexical verifier can misclassify. Do not claim broad generalization or fine-tuning gains."
+}

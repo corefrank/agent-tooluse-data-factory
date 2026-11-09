@@ -1,0 +1,12 @@
+{
+  "comparison": "same model, baseline prompt vs enhanced prompt with tool guidance",
+  "n_tasks": 8,
+  "baseline_success": 6,
+  "enhanced_success": 6,
+  "baseline_success_rate": 0.75,
+  "enhanced_success_rate": 0.75,
+  "delta_percentage_points": 0.0,
+  "improved_task_ids": [],
+  "regressed_task_ids": [],
+  "note": "Small synthetic benchmark. Prompt intervention only; no claim of model finetuning or broad generalization."
+}

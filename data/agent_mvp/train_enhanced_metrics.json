@@ -1,0 +1,13 @@
+{
+  "mode": "live",
+  "variant": "enhanced",
+  "split": "train",
+  "tasks": 12,
+  "task_success_rate": 1.0,
+  "tool_execution_success_rate": 1.0,
+  "tool_calls": 13,
+  "passed_tasks": 12,
+  "mean_seconds": 2.586,
+  "model": "qwen-plus",
+  "trace_file": "/home/nan/projects/data_engineering_book/code/zh/project_7_agent_tooluse/data/agent_mvp/train_enhanced.jsonl"
+}

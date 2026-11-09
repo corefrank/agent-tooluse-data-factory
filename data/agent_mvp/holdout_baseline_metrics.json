@@ -1,0 +1,13 @@
+{
+  "mode": "live",
+  "variant": "baseline",
+  "split": "holdout",
+  "tasks": 16,
+  "task_success_rate": 0.625,
+  "tool_execution_success_rate": 0.7391,
+  "tool_calls": 23,
+  "passed_tasks": 10,
+  "mean_seconds": 3.661,
+  "model": "qwen-plus",
+  "trace_file": "/home/nan/projects/data_engineering_book/code/zh/project_7_agent_tooluse/data/agent_mvp/holdout_baseline.jsonl"
+}

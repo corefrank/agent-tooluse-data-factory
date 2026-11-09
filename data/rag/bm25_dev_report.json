@@ -1,0 +1,996 @@
+{
+  "summary": {
+    "retriever": "bm25-simple-latin-cjk2gram",
+    "split": "dev",
+    "n_queries": 60,
+    "n_documents": 120,
+    "n_chunks": 576,
+    "recall_at_1": 0.9,
+    "recall_at_5": 1.0,
+    "mrr_at_10": 0.95,
+    "by_language": {
+      "en": {
+        "count": 30,
+        "recall_at_1": 1.0
+      },
+      "zh": {
+        "count": 30,
+        "recall_at_1": 0.8
+      }
+    }
+  },
+  "details": [
+    {
+      "query_id": "q_lumen_renewals_en",
+      "language": "en",
+      "topic": "renewals",
+      "split": "dev",
+      "query": "How many days may a Lumen subscription renewal be postponed?",
+      "gold_doc_ids": [
+        "kb_lumen_renewals_v1"
+      ],
+      "rank": 1,
+      "top_doc_ids": [
+        "kb_lumen_renewals_v1",
+        "kb_atlas_renewals_v1",
+        "kb_aurora_renewals_v1",
+        "kb_boreal_renewals_v1",
+        "kb_cobalt_renewals_v1"
+      ]
+    },
+    {
+      "query_id": "q_lumen_renewals_zh",
+      "language": "zh",
+      "topic": "renewals",
+      "split": "dev",
+      "query": "Lumen 订阅续费最多可以延后多少天？",
+      "gold_doc_ids": [
+        "kb_lumen_renewals_v1"
+      ],
+      "rank": 1,
+      "top_doc_ids": [
+        "kb_lumen_renewals_v1",
+        "kb_lumen_returns_v1"
+      ]
+    },
+    {
+      "query_id": "q_lumen_returns_en",
+      "language": "en",
+      "topic": "returns",
+      "split": "dev",
+      "query": "What is the current Lumen product return window after delivery?",
+      "gold_doc_ids": [
+        "kb_lumen_returns_v1"
+      ],
+      "rank": 1,
+      "top_doc_ids": [
+        "kb_lumen_returns_v1",
+        "kb_atlas_returns_v1",
+        "kb_aurora_returns_v1",
+        "kb_boreal_returns_v1",
+        "kb_cobalt_returns_v1"
+      ]
+    },
+    {
+      "query_id": "q_lumen_returns_zh",
+      "language": "zh",
+      "topic": "returns",
+      "split": "dev",
+      "query": "Lumen 产品收货后，现行退货期限是多久？",
+      "gold_doc_ids": [
+        "kb_lumen_returns_v1"
+      ],
+      "rank": 2,
+      "top_doc_ids": [
+        "kb_lumen_renewals_v1",
+        "kb_lumen_returns_v1"
+      ]
+    },
+    {
+      "query_id": "q_lumen_seats_en",
+      "language": "en",
+      "topic": "seats",
+      "split": "dev",
+      "query": "How many named seats are included in the Lumen Team plan?",
+      "gold_doc_ids": [
+        "kb_lumen_seats_v1"
+      ],
+      "rank": 1,
+      "top_doc_ids": [
+        "kb_lumen_seats_v1",
+        "kb_atlas_seats_v1",
+        "kb_aurora_seats_v1",
+        "kb_boreal_seats_v1",
+        "kb_cobalt_seats_v1"
+      ]
+    },
+    {
+      "query_id": "q_lumen_seats_zh",
+      "language": "zh",
+      "topic": "seats",
+      "split": "dev",
+      "query": "Lumen 团队版套餐包含几个正式席位？",
+      "gold_doc_ids": [
+        "kb_lumen_seats_v1"
+      ],
+      "rank": 1,
+      "top_doc_ids": [
+        "kb_lumen_seats_v1"
+      ]
+    },
+    {
+      "query_id": "q_lumen_security_en",
+      "language": "en",
+      "topic": "security",
+      "split": "dev",
+      "query": "After how many minutes does an idle Lumen administrator session expire?",
+      "gold_doc_ids": [
+        "kb_lumen_security_v1"
+      ],
+      "rank": 1,
+      "top_doc_ids": [
+        "kb_lumen_security_v1",
+        "kb_atlas_security_v1",
+        "kb_aurora_security_v1",
+        "kb_boreal_security_v1",
+        "kb_cobalt_security_v1"
+      ]
+    },
+    {
+      "query_id": "q_lumen_security_zh",
+      "language": "zh",
+      "topic": "security",
+      "split": "dev",
+      "query": "Lumen 管理员长时间无操作后多少分钟自动退出？",
+      "gold_doc_ids": [
+        "kb_lumen_security_v1"
+      ],
+      "rank": 1,
+      "top_doc_ids": [
+        "kb_lumen_security_v1"
+      ]
+    },
+    {
+      "query_id": "q_lumen_support_en",
+      "language": "en",
+      "topic": "support",
+      "split": "dev",
+      "query": "What is the approved Lumen customer support email address?",
+      "gold_doc_ids": [
+        "kb_lumen_support_v1"
+      ],
+      "rank": 1,
+      "top_doc_ids": [
+        "kb_lumen_support_v1",
+        "kb_atlas_support_v1",
+        "kb_aurora_support_v1",
+        "kb_boreal_support_v1",
+        "kb_cobalt_support_v1"
+      ]
+    },
+    {
+      "query_id": "q_lumen_support_zh",
+      "language": "zh",
+      "topic": "support",
+      "split": "dev",
+      "query": "请告诉我 Lumen 的官方账户客服邮箱。",
+      "gold_doc_ids": [
+        "kb_lumen_support_v1"
+      ],
+      "rank": 1,
+      "top_doc_ids": [
+        "kb_lumen_support_v1"
+      ]
+    },
+    {
+      "query_id": "q_meridian_renewals_en",
+      "language": "en",
+      "topic": "renewals",
+      "split": "dev",
+      "query": "How many days may a Meridian subscription renewal be postponed?",
+      "gold_doc_ids": [
+        "kb_meridian_renewals_v1"
+      ],
+      "rank": 1,
+      "top_doc_ids": [
+        "kb_meridian_renewals_v1",
+        "kb_atlas_renewals_v1",
+        "kb_aurora_renewals_v1",
+        "kb_boreal_renewals_v1",
+        "kb_cobalt_renewals_v1"
+      ]
+    },
+    {
+      "query_id": "q_meridian_renewals_zh",
+      "language": "zh",
+      "topic": "renewals",
+      "split": "dev",
+      "query": "Meridian 订阅续费最多可以延后多少天？",
+      "gold_doc_ids": [
+        "kb_meridian_renewals_v1"
+      ],
+      "rank": 1,
+      "top_doc_ids": [
+        "kb_meridian_renewals_v1",
+        "kb_meridian_returns_v1"
+      ]
+    },
+    {
+      "query_id": "q_meridian_returns_en",
+      "language": "en",
+      "topic": "returns",
+      "split": "dev",
+      "query": "What is the current Meridian product return window after delivery?",
+      "gold_doc_ids": [
+        "kb_meridian_returns_v1"
+      ],
+      "rank": 1,
+      "top_doc_ids": [
+        "kb_meridian_returns_v1",
+        "kb_atlas_returns_v1",
+        "kb_aurora_returns_v1",
+        "kb_boreal_returns_v1",
+        "kb_cobalt_returns_v1"
+      ]
+    },
+    {
+      "query_id": "q_meridian_returns_zh",
+      "language": "zh",
+      "topic": "returns",
+      "split": "dev",
+      "query": "Meridian 产品收货后，现行退货期限是多久？",
+      "gold_doc_ids": [
+        "kb_meridian_returns_v1"
+      ],
+      "rank": 2,
+      "top_doc_ids": [
+        "kb_meridian_renewals_v1",
+        "kb_meridian_returns_v1"
+      ]
+    },
+    {
+      "query_id": "q_meridian_seats_en",
+      "language": "en",
+      "topic": "seats",
+      "split": "dev",
+      "query": "How many named seats are included in the Meridian Team plan?",
+      "gold_doc_ids": [
+        "kb_meridian_seats_v1"
+      ],
+      "rank": 1,
+      "top_doc_ids": [
+        "kb_meridian_seats_v1",
+        "kb_atlas_seats_v1",
+        "kb_aurora_seats_v1",
+        "kb_boreal_seats_v1",
+        "kb_cobalt_seats_v1"
+      ]
+    },
+    {
+      "query_id": "q_meridian_seats_zh",
+      "language": "zh",
+      "topic": "seats",
+      "split": "dev",
+      "query": "Meridian 团队版套餐包含几个正式席位？",
+      "gold_doc_ids": [
+        "kb_meridian_seats_v1"
+      ],
+      "rank": 1,
+      "top_doc_ids": [
+        "kb_meridian_seats_v1"
+      ]
+    },
+    {
+      "query_id": "q_meridian_security_en",
+      "language": "en",
+      "topic": "security",
+      "split": "dev",
+      "query": "After how many minutes does an idle Meridian administrator session expire?",
+      "gold_doc_ids": [
+        "kb_meridian_security_v1"
+      ],
+      "rank": 1,
+      "top_doc_ids": [
+        "kb_meridian_security_v1",
+        "kb_atlas_security_v1",
+        "kb_aurora_security_v1",
+        "kb_boreal_security_v1",
+        "kb_cobalt_security_v1"
+      ]
+    },
+    {
+      "query_id": "q_meridian_security_zh",
+      "language": "zh",
+      "topic": "security",
+      "split": "dev",
+      "query": "Meridian 管理员长时间无操作后多少分钟自动退出？",
+      "gold_doc_ids": [
+        "kb_meridian_security_v1"
+      ],
+      "rank": 1,
+      "top_doc_ids": [
+        "kb_meridian_security_v1"
+      ]
+    },
+    {
+      "query_id": "q_meridian_support_en",
+      "language": "en",
+      "topic": "support",
+      "split": "dev",
+      "query": "What is the approved Meridian customer support email address?",
+      "gold_doc_ids": [
+        "kb_meridian_support_v1"
+      ],
+      "rank": 1,
+      "top_doc_ids": [
+        "kb_meridian_support_v1",
+        "kb_atlas_support_v1",
+        "kb_aurora_support_v1",
+        "kb_boreal_support_v1",
+        "kb_cobalt_support_v1"
+      ]
+    },
+    {
+      "query_id": "q_meridian_support_zh",
+      "language": "zh",
+      "topic": "support",
+      "split": "dev",
+      "query": "请告诉我 Meridian 的官方账户客服邮箱。",
+      "gold_doc_ids": [
+        "kb_meridian_support_v1"
+      ],
+      "rank": 1,
+      "top_doc_ids": [
+        "kb_meridian_support_v1"
+      ]
+    },
+    {
+      "query_id": "q_nimbus_renewals_en",
+      "language": "en",
+      "topic": "renewals",
+      "split": "dev",
+      "query": "How many days may a Nimbus subscription renewal be postponed?",
+      "gold_doc_ids": [
+        "kb_nimbus_renewals_v1"
+      ],
+      "rank": 1,
+      "top_doc_ids": [
+        "kb_nimbus_renewals_v1",
+        "kb_atlas_renewals_v1",
+        "kb_aurora_renewals_v1",
+        "kb_boreal_renewals_v1",
+        "kb_cobalt_renewals_v1"
+      ]
+    },
+    {
+      "query_id": "q_nimbus_renewals_zh",
+      "language": "zh",
+      "topic": "renewals",
+      "split": "dev",
+      "query": "Nimbus 订阅续费最多可以延后多少天？",
+      "gold_doc_ids": [
+        "kb_nimbus_renewals_v1"
+      ],
+      "rank": 1,
+      "top_doc_ids": [
+        "kb_nimbus_renewals_v1",
+        "kb_nimbus_returns_v1"
+      ]
+    },
+    {
+      "query_id": "q_nimbus_returns_en",
+      "language": "en",
+      "topic": "returns",
+      "split": "dev",
+      "query": "What is the current Nimbus product return window after delivery?",
+      "gold_doc_ids": [
+        "kb_nimbus_returns_v1"
+      ],
+      "rank": 1,
+      "top_doc_ids": [
+        "kb_nimbus_returns_v1",
+        "kb_atlas_returns_v1",
+        "kb_aurora_returns_v1",
+        "kb_boreal_returns_v1",
+        "kb_cobalt_returns_v1"
+      ]
+    },
+    {
+      "query_id": "q_nimbus_returns_zh",
+      "language": "zh",
+      "topic": "returns",
+      "split": "dev",
+      "query": "Nimbus 产品收货后，现行退货期限是多久？",
+      "gold_doc_ids": [
+        "kb_nimbus_returns_v1"
+      ],
+      "rank": 2,
+      "top_doc_ids": [
+        "kb_nimbus_renewals_v1",
+        "kb_nimbus_returns_v1"
+      ]
+    },
+    {
+      "query_id": "q_nimbus_seats_en",
+      "language": "en",
+      "topic": "seats",
+      "split": "dev",
+      "query": "How many named seats are included in the Nimbus Team plan?",
+      "gold_doc_ids": [
+        "kb_nimbus_seats_v1"
+      ],
+      "rank": 1,
+      "top_doc_ids": [
+        "kb_nimbus_seats_v1",
+        "kb_atlas_seats_v1",
+        "kb_aurora_seats_v1",
+        "kb_boreal_seats_v1",
+        "kb_cobalt_seats_v1"
+      ]
+    },
+    {
+      "query_id": "q_nimbus_seats_zh",
+      "language": "zh",
+      "topic": "seats",
+      "split": "dev",
+      "query": "Nimbus 团队版套餐包含几个正式席位？",
+      "gold_doc_ids": [
+        "kb_nimbus_seats_v1"
+      ],
+      "rank": 1,
+      "top_doc_ids": [
+        "kb_nimbus_seats_v1"
+      ]
+    },
+    {
+      "query_id": "q_nimbus_security_en",
+      "language": "en",
+      "topic": "security",
+      "split": "dev",
+      "query": "After how many minutes does an idle Nimbus administrator session expire?",
+      "gold_doc_ids": [
+        "kb_nimbus_security_v1"
+      ],
+      "rank": 1,
+      "top_doc_ids": [
+        "kb_nimbus_security_v1",
+        "kb_atlas_security_v1",
+        "kb_aurora_security_v1",
+        "kb_boreal_security_v1",
+        "kb_cobalt_security_v1"
+      ]
+    },
+    {
+      "query_id": "q_nimbus_security_zh",
+      "language": "zh",
+      "topic": "security",
+      "split": "dev",
+      "query": "Nimbus 管理员长时间无操作后多少分钟自动退出？",
+      "gold_doc_ids": [
+        "kb_nimbus_security_v1"
+      ],
+      "rank": 1,
+      "top_doc_ids": [
+        "kb_nimbus_security_v1"
+      ]
+    },
+    {
+      "query_id": "q_nimbus_support_en",
+      "language": "en",
+      "topic": "support",
+      "split": "dev",
+      "query": "What is the approved Nimbus customer support email address?",
+      "gold_doc_ids": [
+        "kb_nimbus_support_v1"
+      ],
+      "rank": 1,
+      "top_doc_ids": [
+        "kb_nimbus_support_v1",
+        "kb_atlas_support_v1",
+        "kb_aurora_support_v1",
+        "kb_boreal_support_v1",
+        "kb_cobalt_support_v1"
+      ]
+    },
+    {
+      "query_id": "q_nimbus_support_zh",
+      "language": "zh",
+      "topic": "support",
+      "split": "dev",
+      "query": "请告诉我 Nimbus 的官方账户客服邮箱。",
+      "gold_doc_ids": [
+        "kb_nimbus_support_v1"
+      ],
+      "rank": 1,
+      "top_doc_ids": [
+        "kb_nimbus_support_v1"
+      ]
+    },
+    {
+      "query_id": "q_orion_renewals_en",
+      "language": "en",
+      "topic": "renewals",
+      "split": "dev",
+      "query": "How many days may a Orion subscription renewal be postponed?",
+      "gold_doc_ids": [
+        "kb_orion_renewals_v1"
+      ],
+      "rank": 1,
+      "top_doc_ids": [
+        "kb_orion_renewals_v1",
+        "kb_atlas_renewals_v1",
+        "kb_aurora_renewals_v1",
+        "kb_boreal_renewals_v1",
+        "kb_cobalt_renewals_v1"
+      ]
+    },
+    {
+      "query_id": "q_orion_renewals_zh",
+      "language": "zh",
+      "topic": "renewals",
+      "split": "dev",
+      "query": "Orion 订阅续费最多可以延后多少天？",
+      "gold_doc_ids": [
+        "kb_orion_renewals_v1"
+      ],
+      "rank": 1,
+      "top_doc_ids": [
+        "kb_orion_renewals_v1",
+        "kb_orion_returns_v1"
+      ]
+    },
+    {
+      "query_id": "q_orion_returns_en",
+      "language": "en",
+      "topic": "returns",
+      "split": "dev",
+      "query": "What is the current Orion product return window after delivery?",
+      "gold_doc_ids": [
+        "kb_orion_returns_v1"
+      ],
+      "rank": 1,
+      "top_doc_ids": [
+        "kb_orion_returns_v1",
+        "kb_atlas_returns_v1",
+        "kb_aurora_returns_v1",
+        "kb_boreal_returns_v1",
+        "kb_cobalt_returns_v1"
+      ]
+    },
+    {
+      "query_id": "q_orion_returns_zh",
+      "language": "zh",
+      "topic": "returns",
+      "split": "dev",
+      "query": "Orion 产品收货后，现行退货期限是多久？",
+      "gold_doc_ids": [
+        "kb_orion_returns_v1"
+      ],
+      "rank": 2,
+      "top_doc_ids": [
+        "kb_orion_renewals_v1",
+        "kb_orion_returns_v1"
+      ]
+    },
+    {
+      "query_id": "q_orion_seats_en",
+      "language": "en",
+      "topic": "seats",
+      "split": "dev",
+      "query": "How many named seats are included in the Orion Team plan?",
+      "gold_doc_ids": [
+        "kb_orion_seats_v1"
+      ],
+      "rank": 1,
+      "top_doc_ids": [
+        "kb_orion_seats_v1",
+        "kb_atlas_seats_v1",
+        "kb_aurora_seats_v1",
+        "kb_boreal_seats_v1",
+        "kb_cobalt_seats_v1"
+      ]
+    },
+    {
+      "query_id": "q_orion_seats_zh",
+      "language": "zh",
+      "topic": "seats",
+      "split": "dev",
+      "query": "Orion 团队版套餐包含几个正式席位？",
+      "gold_doc_ids": [
+        "kb_orion_seats_v1"
+      ],
+      "rank": 1,
+      "top_doc_ids": [
+        "kb_orion_seats_v1"
+      ]
+    },
+    {
+      "query_id": "q_orion_security_en",
+      "language": "en",
+      "topic": "security",
+      "split": "dev",
+      "query": "After how many minutes does an idle Orion administrator session expire?",
+      "gold_doc_ids": [
+        "kb_orion_security_v1"
+      ],
+      "rank": 1,
+      "top_doc_ids": [
+        "kb_orion_security_v1",
+        "kb_atlas_security_v1",
+        "kb_aurora_security_v1",
+        "kb_boreal_security_v1",
+        "kb_cobalt_security_v1"
+      ]
+    },
+    {
+      "query_id": "q_orion_security_zh",
+      "language": "zh",
+      "topic": "security",
+      "split": "dev",
+      "query": "Orion 管理员长时间无操作后多少分钟自动退出？",
+      "gold_doc_ids": [
+        "kb_orion_security_v1"
+      ],
+      "rank": 1,
+      "top_doc_ids": [
+        "kb_orion_security_v1"
+      ]
+    },
+    {
+      "query_id": "q_orion_support_en",
+      "language": "en",
+      "topic": "support",
+      "split": "dev",
+      "query": "What is the approved Orion customer support email address?",
+      "gold_doc_ids": [
+        "kb_orion_support_v1"
+      ],
+      "rank": 1,
+      "top_doc_ids": [
+        "kb_orion_support_v1",
+        "kb_atlas_support_v1",
+        "kb_aurora_support_v1",
+        "kb_boreal_support_v1",
+        "kb_cobalt_support_v1"
+      ]
+    },
+    {
+      "query_id": "q_orion_support_zh",
+      "language": "zh",
+      "topic": "support",
+      "split": "dev",
+      "query": "请告诉我 Orion 的官方账户客服邮箱。",
+      "gold_doc_ids": [
+        "kb_orion_support_v1"
+      ],
+      "rank": 1,
+      "top_doc_ids": [
+        "kb_orion_support_v1"
+      ]
+    },
+    {
+      "query_id": "q_pioneer_renewals_en",
+      "language": "en",
+      "topic": "renewals",
+      "split": "dev",
+      "query": "How many days may a Pioneer subscription renewal be postponed?",
+      "gold_doc_ids": [
+        "kb_pioneer_renewals_v1"
+      ],
+      "rank": 1,
+      "top_doc_ids": [
+        "kb_pioneer_renewals_v1",
+        "kb_atlas_renewals_v1",
+        "kb_aurora_renewals_v1",
+        "kb_boreal_renewals_v1",
+        "kb_cobalt_renewals_v1"
+      ]
+    },
+    {
+      "query_id": "q_pioneer_renewals_zh",
+      "language": "zh",
+      "topic": "renewals",
+      "split": "dev",
+      "query": "Pioneer 订阅续费最多可以延后多少天？",
+      "gold_doc_ids": [
+        "kb_pioneer_renewals_v1"
+      ],
+      "rank": 1,
+      "top_doc_ids": [
+        "kb_pioneer_renewals_v1",
+        "kb_pioneer_returns_v1"
+      ]
+    },
+    {
+      "query_id": "q_pioneer_returns_en",
+      "language": "en",
+      "topic": "returns",
+      "split": "dev",
+      "query": "What is the current Pioneer product return window after delivery?",
+      "gold_doc_ids": [
+        "kb_pioneer_returns_v1"
+      ],
+      "rank": 1,
+      "top_doc_ids": [
+        "kb_pioneer_returns_v1",
+        "kb_atlas_returns_v1",
+        "kb_aurora_returns_v1",
+        "kb_boreal_returns_v1",
+        "kb_cobalt_returns_v1"
+      ]
+    },
+    {
+      "query_id": "q_pioneer_returns_zh",
+      "language": "zh",
+      "topic": "returns",
+      "split": "dev",
+      "query": "Pioneer 产品收货后，现行退货期限是多久？",
+      "gold_doc_ids": [
+        "kb_pioneer_returns_v1"
+      ],
+      "rank": 2,
+      "top_doc_ids": [
+        "kb_pioneer_renewals_v1",
+        "kb_pioneer_returns_v1"
+      ]
+    },
+    {
+      "query_id": "q_pioneer_seats_en",
+      "language": "en",
+      "topic": "seats",
+      "split": "dev",
+      "query": "How many named seats are included in the Pioneer Team plan?",
+      "gold_doc_ids": [
+        "kb_pioneer_seats_v1"
+      ],
+      "rank": 1,
+      "top_doc_ids": [
+        "kb_pioneer_seats_v1",
+        "kb_atlas_seats_v1",
+        "kb_aurora_seats_v1",
+        "kb_boreal_seats_v1",
+        "kb_cobalt_seats_v1"
+      ]
+    },
+    {
+      "query_id": "q_pioneer_seats_zh",
+      "language": "zh",
+      "topic": "seats",
+      "split": "dev",
+      "query": "Pioneer 团队版套餐包含几个正式席位？",
+      "gold_doc_ids": [
+        "kb_pioneer_seats_v1"
+      ],
+      "rank": 1,
+      "top_doc_ids": [
+        "kb_pioneer_seats_v1"
+      ]
+    },
+    {
+      "query_id": "q_pioneer_security_en",
+      "language": "en",
+      "topic": "security",
+      "split": "dev",
+      "query": "After how many minutes does an idle Pioneer administrator session expire?",
+      "gold_doc_ids": [
+        "kb_pioneer_security_v1"
+      ],
+      "rank": 1,
+      "top_doc_ids": [
+        "kb_pioneer_security_v1",
+        "kb_atlas_security_v1",
+        "kb_aurora_security_v1",
+        "kb_boreal_security_v1",
+        "kb_cobalt_security_v1"
+      ]
+    },
+    {
+      "query_id": "q_pioneer_security_zh",
+      "language": "zh",
+      "topic": "security",
+      "split": "dev",
+      "query": "Pioneer 管理员长时间无操作后多少分钟自动退出？",
+      "gold_doc_ids": [
+        "kb_pioneer_security_v1"
+      ],
+      "rank": 1,
+      "top_doc_ids": [
+        "kb_pioneer_security_v1"
+      ]
+    },
+    {
+      "query_id": "q_pioneer_support_en",
+      "language": "en",
+      "topic": "support",
+      "split": "dev",
+      "query": "What is the approved Pioneer customer support email address?",
+      "gold_doc_ids": [
+        "kb_pioneer_support_v1"
+      ],
+      "rank": 1,
+      "top_doc_ids": [
+        "kb_pioneer_support_v1",
+        "kb_atlas_support_v1",
+        "kb_aurora_support_v1",
+        "kb_boreal_support_v1",
+        "kb_cobalt_support_v1"
+      ]
+    },
+    {
+      "query_id": "q_pioneer_support_zh",
+      "language": "zh",
+      "topic": "support",
+      "split": "dev",
+      "query": "请告诉我 Pioneer 的官方账户客服邮箱。",
+      "gold_doc_ids": [
+        "kb_pioneer_support_v1"
+      ],
+      "rank": 1,
+      "top_doc_ids": [
+        "kb_pioneer_support_v1"
+      ]
+    },
+    {
+      "query_id": "q_quartz_renewals_en",
+      "language": "en",
+      "topic": "renewals",
+      "split": "dev",
+      "query": "How many days may a Quartz subscription renewal be postponed?",
+      "gold_doc_ids": [
+        "kb_quartz_renewals_v1"
+      ],
+      "rank": 1,
+      "top_doc_ids": [
+        "kb_quartz_renewals_v1",
+        "kb_atlas_renewals_v1",
+        "kb_aurora_renewals_v1",
+        "kb_boreal_renewals_v1",
+        "kb_cobalt_renewals_v1"
+      ]
+    },
+    {
+      "query_id": "q_quartz_renewals_zh",
+      "language": "zh",
+      "topic": "renewals",
+      "split": "dev",
+      "query": "Quartz 订阅续费最多可以延后多少天？",
+      "gold_doc_ids": [
+        "kb_quartz_renewals_v1"
+      ],
+      "rank": 1,
+      "top_doc_ids": [
+        "kb_quartz_renewals_v1",
+        "kb_quartz_returns_v1"
+      ]
+    },
+    {
+      "query_id": "q_quartz_returns_en",
+      "language": "en",
+      "topic": "returns",
+      "split": "dev",
+      "query": "What is the current Quartz product return window after delivery?",
+      "gold_doc_ids": [
+        "kb_quartz_returns_v1"
+      ],
+      "rank": 1,
+      "top_doc_ids": [
+        "kb_quartz_returns_v1",
+        "kb_atlas_returns_v1",
+        "kb_aurora_returns_v1",
+        "kb_boreal_returns_v1",
+        "kb_cobalt_returns_v1"
+      ]
+    },
+    {
+      "query_id": "q_quartz_returns_zh",
+      "language": "zh",
+      "topic": "returns",
+      "split": "dev",
+      "query": "Quartz 产品收货后，现行退货期限是多久？",
+      "gold_doc_ids": [
+        "kb_quartz_returns_v1"
+      ],
+      "rank": 2,
+      "top_doc_ids": [
+        "kb_quartz_renewals_v1",
+        "kb_quartz_returns_v1"
+      ]
+    },
+    {
+      "query_id": "q_quartz_seats_en",
+      "language": "en",
+      "topic": "seats",
+      "split": "dev",
+      "query": "How many named seats are included in the Quartz Team plan?",
+      "gold_doc_ids": [
+        "kb_quartz_seats_v1"
+      ],
+      "rank": 1,
+      "top_doc_ids": [
+        "kb_quartz_seats_v1",
+        "kb_atlas_seats_v1",
+        "kb_aurora_seats_v1",
+        "kb_boreal_seats_v1",
+        "kb_cobalt_seats_v1"
+      ]
+    },
+    {
+      "query_id": "q_quartz_seats_zh",
+      "language": "zh",
+      "topic": "seats",
+      "split": "dev",
+      "query": "Quartz 团队版套餐包含几个正式席位？",
+      "gold_doc_ids": [
+        "kb_quartz_seats_v1"
+      ],
+      "rank": 1,
+      "top_doc_ids": [
+        "kb_quartz_seats_v1"
+      ]
+    },
+    {
+      "query_id": "q_quartz_security_en",
+      "language": "en",
+      "topic": "security",
+      "split": "dev",
+      "query": "After how many minutes does an idle Quartz administrator session expire?",
+      "gold_doc_ids": [
+        "kb_quartz_security_v1"
+      ],
+      "rank": 1,
+      "top_doc_ids": [
+        "kb_quartz_security_v1",
+        "kb_atlas_security_v1",
+        "kb_aurora_security_v1",
+        "kb_boreal_security_v1",
+        "kb_cobalt_security_v1"
+      ]
+    },
+    {
+      "query_id": "q_quartz_security_zh",
+      "language": "zh",
+      "topic": "security",
+      "split": "dev",
+      "query": "Quartz 管理员长时间无操作后多少分钟自动退出？",
+      "gold_doc_ids": [
+        "kb_quartz_security_v1"
+      ],
+      "rank": 1,
+      "top_doc_ids": [
+        "kb_quartz_security_v1"
+      ]
+    },
+    {
+      "query_id": "q_quartz_support_en",
+      "language": "en",
+      "topic": "support",
+      "split": "dev",
+      "query": "What is the approved Quartz customer support email address?",
+      "gold_doc_ids": [
+        "kb_quartz_support_v1"
+      ],
+      "rank": 1,
+      "top_doc_ids": [
+        "kb_quartz_support_v1",
+        "kb_atlas_support_v1",
+        "kb_aurora_support_v1",
+        "kb_boreal_support_v1",
+        "kb_cobalt_support_v1"
+      ]
+    },
+    {
+      "query_id": "q_quartz_support_zh",
+      "language": "zh",
+      "topic": "support",
+      "split": "dev",
+      "query": "请告诉我 Quartz 的官方账户客服邮箱。",
+      "gold_doc_ids": [
+        "kb_quartz_support_v1"
+      ],
+      "rank": 1,
+      "top_doc_ids": [
+        "kb_quartz_support_v1"
+      ]
+    }
+  ]
+}

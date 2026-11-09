@@ -1,0 +1,64 @@
+{
+  "tool_schema_count": 6,
+  "template_count": 5,
+  "trajectory_count": 22,
+  "category_distribution": {
+    "search": 4,
+    "db": 2,
+    "calendar": 2,
+    "code": 4,
+    "search_db": 2,
+    "memory_calendar": 2,
+    "memory_db": 2,
+    "injection_search": 1,
+    "unsafe_db_export": 1,
+    "unsafe_code": 1,
+    "unsafe_calendar": 1
+  },
+  "variant_distribution": {
+    "success": 10,
+    "recovery": 9,
+    "block": 3
+  },
+  "tool_call_success_rate": 0.7857,
+  "trajectory_success_rate": 1.0,
+  "recovery_success_rate": 1.0,
+  "unsafe_block_rate": 1.0,
+  "unauthorized_tool_call_rate": 0.0,
+  "memory_success_rate": 1.0,
+  "avg_tool_calls_per_success": 1.9091,
+  "training_manifest": {
+    "num_records": 94,
+    "num_train_records": 78,
+    "num_val_records": 16,
+    "num_smoke_records": 12,
+    "category_distribution": {
+      "calendar": 9,
+      "code": 14,
+      "db": 7,
+      "memory_db": 15,
+      "memory_calendar": 17,
+      "search_db": 9,
+      "injection_search": 3,
+      "search": 14,
+      "unsafe_calendar": 2,
+      "unsafe_code": 2,
+      "unsafe_db_export": 2
+    },
+    "variant_distribution": {
+      "recovery": 47,
+      "success": 41,
+      "block": 6
+    },
+    "target_event_distribution": {
+      "assistant_plan": 35,
+      "tool_call": 33,
+      "assistant_final": 26
+    },
+    "safety_record_count": 9,
+    "memory_record_count": 32,
+    "estimated_tokens_total": 5838
+  },
+  "estimated_manual_review_hours": 0.73,
+  "estimated_manual_review_cost_rmb": 73.33
+}

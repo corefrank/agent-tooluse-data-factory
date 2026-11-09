@@ -1,0 +1,157 @@
+{
+  "overall_passed": true,
+  "total_checks": 13,
+  "passed_checks": 13,
+  "command_checks": [
+    {
+      "name": "py_compile",
+      "command": [
+        "/usr/bin/python3",
+        "-m",
+        "py_compile",
+        "/home/nan/projects/data_engineering_book/code/zh/project_7_agent_tooluse/src/build_tooling.py",
+        "/home/nan/projects/data_engineering_book/code/zh/project_7_agent_tooluse/src/evaluate_tooluse.py",
+        "/home/nan/projects/data_engineering_book/code/zh/project_7_agent_tooluse/src/generate_trajectories.py",
+        "/home/nan/projects/data_engineering_book/code/zh/project_7_agent_tooluse/src/pipeline_utils.py",
+        "/home/nan/projects/data_engineering_book/code/zh/project_7_agent_tooluse/src/prepare_agent_dataset.py",
+        "/home/nan/projects/data_engineering_book/code/zh/project_7_agent_tooluse/src/run_p7_checks.py",
+        "/home/nan/projects/data_engineering_book/code/zh/project_7_agent_tooluse/src/simulate_tool_env.py"
+      ],
+      "returncode": 0,
+      "passed": true,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "name": "evaluate_tooluse",
+      "command": [
+        "/usr/bin/python3",
+        "/home/nan/projects/data_engineering_book/code/zh/project_7_agent_tooluse/src/evaluate_tooluse.py"
+      ],
+      "returncode": 0,
+      "passed": true,
+      "stdout": "✅ P7 报告生成完成。\n# P7 Agent Tool-Use Data Factory Report\n\n## 1. 场景定义与工具边界\n\n- 工具 schema 数量：6\n- 轨迹模板数量：5\n- 任务轨迹总数：22\n- 类别分布：{'search': 4, 'db': 2, 'calendar': 2, 'code': 4, 'search_db': 2, 'memory_calendar': 2, 'memory_db': 2, 'injection_search': 1, 'unsafe_db_export': 1, 'unsafe_code': 1, 'unsafe_calendar': 1}\n\n## 2. Tool Schema 与轨迹模板\n\n- 已覆盖搜索、数据库、日历、代码执行、memory read/write 等工具。\n- 已覆盖单步调用、多步链路、参数修复、多轮记忆与安全拒绝模板。\n- 轨迹类型分布：{'success': 10, 'recovery': 9, 'block': 3}\n\n## 3. 成功轨迹与失败恢复\n\n- 工具调用成功率：0.7857\n- 整体轨迹成功率：1.0\n- 恢复轨迹成功率：1.0\n\n## 4. 多轮状态与记忆接入\n\n- 记忆相关轨迹成功率：1.0\n- 成功轨迹平均工具调用步数：1.9091\n\n## 5. 评测与安全治理\n\n- 安全拒绝成功率：1.0\n- 未授权工具调用率：0.0\n- 训练样本数：94\n- train/val/smoke：78/16/12\n\n## 6. 扩展方向\n\n- 从工具调用扩展到复杂 Agent workflow 与跨会话记忆。\n- 引入更真实的权限系统、恶意参数库和环境不确定性模拟。\n- 把恢复轨迹与在线反馈闭环结合，支持更难的多步恢复任务。",
+      "stderr": ""
+    }
+  ],
+  "dataset_checks": [
+    {
+      "name": "required_files_exist",
+      "passed": true,
+      "details": {}
+    },
+    {
+      "name": "tool_schema_fields_complete",
+      "passed": true,
+      "details": {
+        "tool_schema_count": 6
+      }
+    },
+    {
+      "name": "templates_cover_single_multi_and_safety",
+      "passed": true,
+      "details": {
+        "template_ids": [
+          "single_tool_success",
+          "multi_tool_chain",
+          "argument_fix_recovery",
+          "multi_turn_memory",
+          "safety_refusal"
+        ]
+      }
+    },
+    {
+      "name": "variant_coverage",
+      "passed": true,
+      "details": {
+        "variant_distribution": {
+          "success": 10,
+          "recovery": 9,
+          "block": 3
+        }
+      }
+    },
+    {
+      "name": "observations_and_decision_chain_present",
+      "passed": true,
+      "details": {
+        "num_trajectories": 22
+      }
+    },
+    {
+      "name": "memory_cases_succeed",
+      "passed": true,
+      "details": {
+        "memory_case_count": 4
+      }
+    },
+    {
+      "name": "safety_cases_blocked_without_tools",
+      "passed": true,
+      "details": {
+        "safety_case_count": 3
+      }
+    },
+    {
+      "name": "train_val_no_overlap",
+      "passed": true,
+      "details": {
+        "overlap": 0
+      }
+    },
+    {
+      "name": "train_val_no_task_overlap",
+      "passed": true,
+      "details": {
+        "overlap": [],
+        "num_train_tasks": 11,
+        "num_val_tasks": 2
+      }
+    },
+    {
+      "name": "smoke_covers_general_memory_safety",
+      "passed": true,
+      "details": {
+        "general": true,
+        "memory": true,
+        "safety": true
+      }
+    },
+    {
+      "name": "manifest_matches_record_count",
+      "passed": true,
+      "details": {
+        "num_records": 94,
+        "num_train_records": 78,
+        "num_val_records": 16,
+        "num_smoke_records": 12,
+        "category_distribution": {
+          "calendar": 9,
+          "code": 14,
+          "db": 7,
+          "memory_db": 15,
+          "memory_calendar": 17,
+          "search_db": 9,
+          "injection_search": 3,
+          "search": 14,
+          "unsafe_calendar": 2,
+          "unsafe_code": 2,
+          "unsafe_db_export": 2
+        },
+        "variant_distribution": {
+          "recovery": 47,
+          "success": 41,
+          "block": 6
+        },
+        "target_event_distribution": {
+          "assistant_plan": 35,
+          "tool_call": 33,
+          "assistant_final": 26
+        },
+        "safety_record_count": 9,
+        "memory_record_count": 32,
+        "estimated_tokens_total": 5838
+      }
+    }
+  ]
+}

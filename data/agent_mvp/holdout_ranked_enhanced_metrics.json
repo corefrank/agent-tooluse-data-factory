@@ -1,0 +1,13 @@
+{
+  "mode": "live",
+  "variant": "enhanced",
+  "split": "holdout_ranked",
+  "tasks": 16,
+  "task_success_rate": 1.0,
+  "tool_execution_success_rate": 1.0,
+  "tool_calls": 17,
+  "passed_tasks": 16,
+  "mean_seconds": 2.818,
+  "model": "qwen-plus",
+  "trace_file": "/home/nan/projects/data_engineering_book/code/zh/project_7_agent_tooluse/data/agent_mvp/holdout_ranked_enhanced.jsonl"
+}

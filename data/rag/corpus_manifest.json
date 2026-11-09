@@ -1,0 +1,31 @@
+{
+  "corpus_version": "p07-synthetic-enterprise-1.0",
+  "index_version": "bm25-0c0a74cc59f9ba64",
+  "corpus_sha256": "e7a60868b7a2798575b679c4157a687aba6c32a15824effe196b39ef40d87085",
+  "source_type": "synthetic",
+  "seed": "fixed-rule-v1",
+  "num_documents": 120,
+  "num_questions": 240,
+  "documents_by_domain": {
+    "billing": 24,
+    "policy": 48,
+    "security": 24,
+    "support": 24
+  },
+  "questions_by_split": {
+    "dev": 60,
+    "test": 60,
+    "train": 120
+  },
+  "questions_by_language": {
+    "en": 120,
+    "zh": 120
+  },
+  "split_strategy": "group by brand; 12 train / 6 dev / 6 test entities",
+  "generation_note": "Synthetic benchmark, no real-world policy claims, labels generated from the same templates as docs.",
+  "num_chunks": 576,
+  "chunk_size": 480,
+  "chunk_overlap": 70,
+  "retrieval_stage": "phase2a-bm25-only",
+  "structured_trace_env": "P07_INDEX_VERSION"
+}
